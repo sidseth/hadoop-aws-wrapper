@@ -30,7 +30,7 @@
   <properties>
     <file.encoding>UTF-8</file.encoding>
     <downloadSources>true</downloadSources>
-    <hadoop.version>2.9.1</hadoop.version>
+    <hadoop.version>3.3.0-SNAPSHOT</hadoop.version>
     <jackson2.version>2.7.8</jackson2.version>
     <gcs.version>1.9.4-hadoop2</gcs.version>
     <aws-java-sdk.version>1.11.199</aws-java-sdk.version>
@@ -55,7 +55,6 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <configuration>
           <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
-          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
         </configuration>
       </plugin>
       <plugin>
@@ -175,7 +174,7 @@
 
     <dependency>
       <groupId>org.apache.hadoop</groupId>
-      <artifactId>hadoop-hdfs</artifactId>
+      <artifactId>hadoop-hdfs-client</artifactId>
       <version>${hadoop.version}</version>
       <scope>compile</scope>
       <exclusions>
